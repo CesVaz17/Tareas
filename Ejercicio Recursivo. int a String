@@ -1,0 +1,15 @@
+public class IntAString{
+  int numEntero=0;
+  public IntAString(int numEntero){
+    this.numEntero=numEntero;
+  }
+  public void convertidor(int numEntero){
+    String numCadena = String.valueOf(numEntero);
+    System.out.println("Numero Entero:"+numEntero+"\nNumero String: "+numCadena);
+  }
+  public static void main(String[] args){
+  int a=5;
+  IntAString numero =IntAString(a);
+  numero.convertidor(a);
+  }
+}
