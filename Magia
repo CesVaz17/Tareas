@@ -1,0 +1,14 @@
+ public static void main(String[] args) {
+        int a=57;
+        misterio(a);
+    }
+
+    public static int misterio(int n) {
+        System.out.println(n);
+        if(n==1||n==0){
+            return n;
+        }   
+        else
+            return 10*misterio(n/2)+n%2;
+    }
+    //ES PARA SABER EL NUMERO BINARIO DE CUALQUIER NUMERO
