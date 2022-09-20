@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class Binario {
+	static Scanner entrada = new Scanner(System.in);
+	public static void main(String[] args) {
+		int n;
+		System.out.println("INGRESA EL NUMERO DEL VEC: ");
+		n=entrada.nextInt();
+		int [] vec = new int [n];
+		for (int i=0;i<n;i++){
+			vec[i]= (int)(Math.random()*1001);
+			System.out.print(vec[i]+"\t");
+		}
+		System.out.print("El menor del vector es: " + menorRecursoVector (vec,n-1,vec[0]) );}
+
+	public static int menorRecursoVector (int [] vec, int n, int menor){
+		if (n==0 && vec[n]<menor)
+		{
+			return vec[n];
+		}else if (n==0){
+			return menor;}
+		else{
+			if (vec[n]<menor)
+				menor=vec[n];
+			return menorRecursoVector(vec,n-1,menor);
+		}
+	}
+}
