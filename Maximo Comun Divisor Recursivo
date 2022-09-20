@@ -1,0 +1,10 @@
+    public static void main(String[] args) {
+        int a = 350;
+        int b = 80;
+        int mcdRecursivo = maxComunDivisor(a, b);
+        System.out.printf("El Maximo Comun Divisor De %d y %d  Es:  %d\n", a, b, mcdRecursivo);
+    }
+    public static int maxComunDivisor(int a, int b) {
+    if (b == 0) return a;
+    return maxComunDivisor(b, a % b);
+}
