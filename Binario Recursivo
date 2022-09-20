@@ -1,0 +1,12 @@
+public static void main(String[] args) {
+		entero(74);
+	}
+	public static void entero (int n){
+		if(n<2){
+			System.out.print(n);
+			return;
+		}else{
+			entero(n/2);
+			System.out.print(n%2);
+		}
+	}
