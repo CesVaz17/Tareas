@@ -1,0 +1,14 @@
+public static void main(String[] args) {
+        int a[] ={54,59,74,12,1,3,4,5};
+        int menor = a[0];
+        numeroMenor(menor,a);
+    }
+
+    private static int numeroMenor(int menor, int[] a) {
+        for (int x = 1; x < a.length; x++) {
+    int numeroActual = a[x];
+    if (numeroActual < menor) {
+        menor = numeroActual;
+    }
+    return numeroMenor(menor,a);
+}
