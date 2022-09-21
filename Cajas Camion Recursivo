@@ -1,0 +1,22 @@
+ public static void main(String[] args) {
+        int caj = 13;
+        int cam = 4;
+        cajas(caj,cam);
+
+    }
+    public static int cajas(int caj, int cam)
+    {
+        if (caj>0){
+            int cajCamion = caj/cam;
+            int residuo = caj % cam;
+            
+            for(int i=1;i<=cam;i++){
+                System.out.println("Camion "+i+" Lleva "+cajCamion+" Cajas");
+               
+            }
+            System.out.println("El ultimo camion llevo "+residuo);
+            return 0;
+        }
+        return cajas(caj,cam);
+    }
+    
