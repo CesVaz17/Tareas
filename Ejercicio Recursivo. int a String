@@ -3,9 +3,9 @@ public class IntAString{
   public IntAString(int numEntero){
     this.numEntero=numEntero;
   }
-  public void convertidor(int numEntero){
-    String numCadena = String.valueOf(numEntero);
+  public int convertidor(int numEntero){
     System.out.println("Numero Entero:"+numEntero+"\nNumero String: "+numCadena);
+    return convertidor (String numCadena = String.valueOf(numEntero));
   }
   public static void main(String[] args){
   int a=5;
